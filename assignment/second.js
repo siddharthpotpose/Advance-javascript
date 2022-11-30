@@ -10,11 +10,11 @@
 class salary {
      name; address;phone;subjectSpecialisation;monthlySalary;incomeTax;
      input(){
-        this.name=name(prompt("enter your name :: "));
-        this.address=address(prompt('enter your adrress :: ')),
-        this.phone=phone(prompt('enter your phone number :: ')),
-        this.subjectSpecialisation(prompt('enter your subjectSpecia;isation :: ')),
-        this.monthlySalary=monthlySalary(prompt("menter your monthly salary :: "))
+        this.name=(prompt("enter your name :: "));
+        this.address=(prompt('enter your adrress :: ')),
+        this.phone=(prompt('enter your phone number :: ')),
+        this.subjectSpecialisation=(prompt('enter your subjectSpecialisation :: ')),
+        this.monthlySalary=(prompt("menter your monthly salary :: "))
      }
      display(){
         document.write('name :: '+this.name);
@@ -24,21 +24,20 @@ class salary {
         document.write("monthly salary :: "+this.monthlySalary)
      }
      calculate (){
-        let aSalary;
-        aSalary=this.monthlySalary*12;
-        if(aSalary>175000){
+      
+       let aSalary=this.monthlySalary*12;
+        if(aSalary > 175000){
             this.incomeTax=5/100*(aSalary-175000);
         }
             else{
             this.incomeTax=0;
-            }
-        
+            }   
+            document.write(this.incomeTax) 
      }
-
-}
+   
+} 
 let s1=new salary()
-s1.input()
-calculate()
-display()
-input()
+s1.display()
+s1.calculate()
+
 
