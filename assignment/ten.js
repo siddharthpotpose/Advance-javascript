@@ -1,4 +1,18 @@
-// 10.
+// 10.Define a class called Library with the following description:
+// Instance variables/data members:
+// int acc_num   ===================== stores the accession number of books
+// string title =====================  stores the title of book
+// string autho =====================  stores the name of author
+
+// Members methods:
+// void input()                    to input and store the accession number,title and author
+// void compute()                  to accept the number of days late, calculate and display the fine charged the rate
+//                                 of ₹2 per day
+// void display()                  to display the details in the following format:
+
+// Accession number                  Title              Author
+// Write the main method to create an object of the class and call the above member methods.
+// =========================================================================================
 
 class library{
 AccountNo;Title;Auther;
