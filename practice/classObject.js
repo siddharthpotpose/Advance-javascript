@@ -4,7 +4,7 @@ constructor (html,css,js){
     this.html=html,
     this.css=css,
     this.js=js
-}
+} 
     fun(){
         console.log(this.html,this.css,this.js)
     }

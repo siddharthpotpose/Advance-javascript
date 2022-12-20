@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<button type="submit" onclick="fun()">click here</button>
+<input type="button" id="btn" onmouseover="fun2()" value="click">
+<button type="submit" class="one" onmouseover="two()">btn3</button>
+
+
+<script src="event.js"></script>
+ 
+ <script>
+        let event=document.querySelector('button')
+
+         event=addEventListener('click',fun)
+        console.log(event)
+
+   
+        function fun(){
+            alert('hello welcome')
+        }
+// -------------------------------------------------------------------------
+let listener=document.getElementsByTagName('input')
+listener.addEventListener('mouseover',fun2)
+console.log(listener)
+
+        function fun2(){
+            alert('i m sid')
+        }
+        fun2()
+
+    </script>
+</body>
+
+</html>
